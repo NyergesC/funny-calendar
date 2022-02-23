@@ -77,22 +77,28 @@ function loadEvent (){
 
     for (const month of year) {
 
-        for(let day = 1; day <= 31; day++ ){
+        let monthSection="";
+        let dayCards="";
+
+       
+        for(let day = 1; day <= month.days; day++ ){
+
+                dayCards += `
+                <div class="card">
+                    <time daytime="YYYY">2022</time>
+                    <time daytime="MM">${month.month}</time>
+                    <time daytime="DD">${day}</time>
+                </div>
+                `
             
-            document.getElementById("root").insertAdjacentHTML("beforeend", `
-                <section>
-                    <div class="card">
-                        <time daytime="YYYY">2022</time
-                        <time daytime="MM">${month.month}</time>
-                        <time daytime="DD">${month.days}</time>
-                </section>        
-            
-            `)
+            //document.getElementById("root").insertAdjacentHTML("beforeend",(card))
         }
 
+        monthSection += `<section>${dayCards}</section>`;
+        document.getElementById("root").insertAdjacentHTML("beforeend", monthSection);
            
     }
 
     console.log(year)
 }
-window.addEventListener("Load", loadEvent)
+window.addEventListener("load", loadEvent)
