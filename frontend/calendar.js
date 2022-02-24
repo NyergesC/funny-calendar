@@ -94,7 +94,7 @@ function loadEvent (){
             //document.getElementById("root").insertAdjacentHTML("beforeend",(card))
         }
 
-        monthSection += `<section>${dayCards}</section>`;
+        monthSection += `<section id=${month.id}>${dayCards}</section>`;
         document.getElementById("root").insertAdjacentHTML("beforeend", monthSection);
            
     }
