@@ -97,6 +97,7 @@
 #febr div time:nth-child(1) {
     font-size: 25px;
 }
+
   /*-------------------------MARCH----------------------------*/
   
 #marc div {
@@ -119,7 +120,7 @@
   #marc div time:nth-child(1) {
       font-size: 25px;  
 }
-   
+
 /*-------------------------APRIL----------------------------*/
 #apr div {
     display: grid;
@@ -128,8 +129,7 @@
     text-align: center;
     padding: 50px 0;
     border-radius: 10%;
-    box-shadow: 20px 20px 50px grey;
-}
+  }
 
 #apr {
     background-color: #DBFBCC;
@@ -196,6 +196,7 @@
  #july, #aug, #sept, #oct, #nov {
      display: flex;
      flex-wrap: wrap;
+     flex-direction: row;
  }
 
 
@@ -207,7 +208,6 @@
 /*    align-items: center; */
    align-content: flex-end;
    text-align: center;
-   flex-wrap: wrap;
    margin-top: 20px;
  }
 
@@ -237,7 +237,6 @@
  #aug {
    gap: 10px;
    text-align: center;
-   flex-wrap: wrap;
    margin-top: 20px;
    flex-direction: column-reverse;
   }
@@ -264,7 +263,6 @@
     justify-content: flex-start;
     align-content: flex-start;
     text-align: center;
-    flex-wrap: wrap;
     margin-top: 20px;
     margin-left: 60px;
     }
@@ -298,7 +296,6 @@
      text-align: center;
      justify-content: space-around;
      align-content: center;
-     flex-wrap: wrap;
      background-color: #00A7AE;
      gap: 0 10px;
      
@@ -331,7 +328,6 @@
     text-align: center;
     justify-content: space-between;
     align-content: center;
-    flex-wrap: wrap;
     background-color: #A1E0BC;
     gap: 0 10px;
     
@@ -385,5 +381,64 @@
     color: #16421C
    }
 
+ /*------------------------MEDIA QUERIES---------------------------*/
+
+   @media (max-width: 800px) {
+    #jan div {
+      background-color: pink;
+    }   
+    
+    #febr div {
+      background-color: blue;
+    }   
+    
+    #marc div {
+      background-color: green;
+    }   
+    
+    #apr div {
+      background-color: orange;
+    }   
+    
+    #may div {
+      background-color: red;
+    }   
+    
+    #june div {
+      background-color: blueviolet;
+    }   
+    
+    #july div {
+      background-color: darkcyan;
+    }   
+    
+    #aug div {
+      background-color: greenyellow;
+    }   
+    
+    #sept div {
+      background-color: rosybrown;
+    }   
+    
+    #oct div {
+      background-color: purple;
+    }   
+    
+    #nov div {
+      background-color: hotpink;
+    }   
+    
+    #dec .card {
+      background-color: tomato;
+    }   
+    
+  }
+
+  @media screen and (max-width: 800px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
     
   
