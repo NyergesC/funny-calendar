@@ -75,7 +75,7 @@ function loadEvent (){
         }
     ];
 
-    for (const month of year) {
+/*     for (const month of year) {
 
         let monthSection="";
         let dayCards="";
@@ -108,4 +108,46 @@ function loadEvent (){
 
     console.log(year)
 }
-window.addEventListener("load", loadEvent)
+window.addEventListener("load", loadEvent) */
+
+    let buttons = [];
+
+    for (const month of year) {
+
+        let monthSection="";
+        let dayCards="";
+            
+        for(let day = 1; day <= month.days; day++ ){    
+
+            let buttonName = `${month.month+day}`     
+
+            dayCards += `
+            <div class="card card-event">
+                <time daytime="YYYY">2022</time>
+                <time daytime="MM">${month.month}</time>
+                <time daytime="DD">${day}</time>
+                <button id=${buttonName}>Push me</button>
+            </div>
+            `
+            
+            buttons.push(buttonName);
+        
+//document.getElementById("root").insertAdjacentHTML("beforeend",(card))
+
+        }
+    
+    monthSection += `<section id=${month.id}>${dayCards}</section>`;
+    document.getElementById("root").insertAdjacentHTML("beforeend", monthSection);        
+    
+    }
+
+    for (const buttonName of buttons) {
+        const element = document.getElementById(buttonName);
+        element.addEventListener("click", function() {
+        element.innerHTML = "Funny Calendar";
+    });
+    }
+
+console.log(year)
+}
+window.addEventListener("load", loadEvent) 
