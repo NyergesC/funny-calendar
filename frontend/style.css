@@ -214,7 +214,7 @@
  #july div {
 /*   width: calc(100% / 7);  */
    width: 250px;
-   height: 120px;
+   height: 130px;
    background-color: #00A7AE;  
    color: #DBFBCC; 
    border-radius: 15px;
@@ -222,7 +222,7 @@
 
   #july .card time {
     display: block;
-    padding: 5px 0;
+    padding: 3px 0;
   }
   
   #july .card time:nth-child(1) {
@@ -253,7 +253,7 @@
 
   #aug .card time {
     display: block;
-    padding: 15px 0;
+    padding: 12px 0;
   }
   
   /*------------------------SEPTEMBER---------------------------*/
@@ -280,7 +280,7 @@
 
    #sept .card time {
     display: block;
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   #sept .card time:nth-child(1) {
@@ -314,7 +314,7 @@
 
     #oct .card time {
       display: block;
-      padding: 15px 0;
+      padding: 10px 0;
     }
 
     #oct .card time:nth-child(1) {
@@ -346,7 +346,7 @@
 
   #nov .card time {
     display: block;
-    padding: 15px 0;
+    padding: 10px 0;
   }
 
   #nov .card time:nth-child(1) {

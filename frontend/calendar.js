@@ -98,14 +98,13 @@ function loadEvent (){
         monthSection += `<section id=${month.id}>${dayCards}</section>`;
         document.getElementById("root").insertAdjacentHTML("beforeend", monthSection);        
         
-        const element = document.getElementById("myBtn");
-        element.addEventListener("click", myFunction);
-        
-        function myFunction() {  
-          element.innerHTML = "Funny Calendar";
     }
-}
-
+    const element = document.getElementById("myBtn");
+    element.addEventListener("click", myFunction);
+    
+    function myFunction() {  
+      element.innerHTML = "Funny Calendar";
+    }   
 
     console.log(year)
 }
