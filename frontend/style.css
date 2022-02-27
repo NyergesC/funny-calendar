@@ -166,8 +166,10 @@
  #june {
      background-color: #00A7AE;
      align-items: center;
+     justify-content: baseline;
      gap: 15px;  
-     padding-top: 30px;
+     padding-top: 60px;
+     gap: 0 80px;
  }
 
 #june div {
@@ -175,9 +177,10 @@
   background-color: #DBFBCC;
   color: #16421C;
   text-align: center;
+  ;
   border-radius: 10%;
   box-shadow: 20px 20px 50px grey;
-  gap: 30px 0;
+/*   gap: 30px 40px; */
 }
 
 
@@ -200,7 +203,9 @@
 
  #july {
    gap: 10px;
-   justify-content: left;
+   justify-content: flex-end;
+/*    align-items: center; */
+   align-content: flex-end;
    text-align: center;
    flex-wrap: wrap;
    margin-top: 20px;
@@ -209,7 +214,7 @@
  #july div {
 /*   width: calc(100% / 7);  */
    width: 250px;
-   height: 180px;
+   height: 120px;
    background-color: #00A7AE;  
    color: #DBFBCC; 
    border-radius: 15px;
@@ -217,7 +222,7 @@
 
   #july .card time {
     display: block;
-    padding: 15px 0;
+    padding: 5px 0;
   }
   
   #july .card time:nth-child(1) {
@@ -232,9 +237,9 @@
  #aug {
    gap: 10px;
    text-align: center;
-   justify-content: right;
    flex-wrap: wrap;
    margin-top: 20px;
+   flex-direction: column-reverse;
   }
 
  #aug div {
@@ -256,24 +261,28 @@
   #sept {
     gap: 10px;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-content: flex-start;
+    text-align: center;
     flex-wrap: wrap;
     margin-top: 20px;
-   }
+    margin-left: 60px;
+    }
  
   #sept div {
  /*   width: calc(100% / 7);  */
     width: 250px;
-    height: 180px;
+    height: 150px;
     background-color: #A1E0BC;
     box-shadow: 20px 20px 50px grey;
     border-radius: 15px;
     color: #16421C;
+    margin: 0 50px;
    }
 
    #sept .card time {
     display: block;
-    padding: 15px 0;
+    padding: 10px 0;
   }
 
   #sept .card time:nth-child(1) {
