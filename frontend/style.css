@@ -440,5 +440,9 @@
     }
   }
   
-    
+   /*------------------------CLICK EVENT---------------------------*/
+  
+   .card-event {
+     background-color: pink;
+   }
   

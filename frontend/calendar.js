@@ -79,25 +79,33 @@ function loadEvent (){
 
         let monthSection="";
         let dayCards="";
-
-       
+             
         for(let day = 1; day <= month.days; day++ ){
 
                 dayCards += `
-                <div class="card">
+                <div class="card card-event">
                     <time daytime="YYYY">2022</time>
                     <time daytime="MM">${month.month}</time>
                     <time daytime="DD">${day}</time>
+                    <button id="myBtn">Push me</button>
                 </div>
                 `
             
             //document.getElementById("root").insertAdjacentHTML("beforeend",(card))
-        }
 
+        }
+        
         monthSection += `<section id=${month.id}>${dayCards}</section>`;
-        document.getElementById("root").insertAdjacentHTML("beforeend", monthSection);
-           
+        document.getElementById("root").insertAdjacentHTML("beforeend", monthSection);        
+        
+        const element = document.getElementById("myBtn");
+        element.addEventListener("click", myFunction);
+        
+        function myFunction() {  
+          element.innerHTML = "Funny Calendar";
     }
+}
+
 
     console.log(year)
 }
