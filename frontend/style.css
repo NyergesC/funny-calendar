@@ -43,12 +43,12 @@
 
 
  #jan, #febr, #marc, #apr, #may, #june {
-     display: grid;
-     grid-template-columns: repeat(7, 200px);
-     grid-template-rows: repeat(5, 180px);
-     justify-content: space-evenly;
-     gap: 10px;
-    }
+    display: grid; 
+    grid-template-columns: repeat(7, 200px);
+    grid-template-rows: repeat(5, 170px);
+    justify-content: space-evenly; 
+    gap: 10px;
+}
     
 /*-------------------------JANUARY----------------------------*/
     
@@ -68,85 +68,79 @@
      background-image: url("pattern3.png");
      background-size: ccontent;
      padding-top: 15px;
-
  }
 
  #jan div time:nth-child(1) {
      font-size: 25px;
-
  }
  
  /*-------------------------FEBRUARY----------------------------*/
  
- #febr div {
-     display: grid;
-     background-color: #A1E0BC;
-     color: #16421C;
-     text-align: center;
-     align-items: center;
-     padding: 50px 0;
-     opacity: 0.8;     
-     border-radius: 10%;
-     box-shadow: 20px 20px 50px grey;
- }
+#febr div {
+    display: grid;
+    background-color: #A1E0BC;
+    color: #16421C;
+    text-align: center;
+    align-items: center;
+    padding: 50px 0;
+    opacity: 0.8;     
+    border-radius: 10%;
+    box-shadow: 20px 20px 50px grey;
+}
  
-  #febr {
-      background-color: #DBFBCC;
-      justify-content: left;
-      padding-top: 110px;
- 
-  }
- 
-  #febr div time:nth-child(1) {
-      font-size: 25px;
- 
-  }
+#febr {
+    background-color: #DBFBCC;
+    justify-content: left;
+    padding-top: 110px;
+}
+
+#febr div time:nth-child(1) {
+    font-size: 25px;
+}
   /*-------------------------MARCH----------------------------*/
   
-  #marc div {
-      display: grid;
-      background-color: #00A7AE;
-      color: #DBFBCC;
-      text-align: center;
-      align-items: center;
-      padding: 50px 0;
-      opacity: 0.8;     
-      border-radius: 10%;
-      box-shadow: 20px 20px 50px grey;
-  }
-  
-   #marc {
-       background-color: #DBFBCC;
-       justify-content:center;
-   }
-  
-   #marc div time:nth-child(1) {
-       font-size: 25px;
-  
-   }
-   
-   /*-------------------------APRIL----------------------------*/
-  #apr div {
-      display: grid;
-      background-color: #16421C;
-      color: #DBFBCC;
-      text-align: center;
-      padding: 50px 0;
+#marc div {
+    display: grid;
+    background-color: #00A7AE;
+    color: #DBFBCC;
+    text-align: center;
+    align-items: center;
+    padding: 50px 0;
+    opacity: 0.8;     
+    border-radius: 10%;
+    box-shadow: 20px 20px 50px grey;
+}
 
-      border-radius: 10%;
-      box-shadow: 20px 20px 50px grey;
-  }
-  
-  #apr {
+  #marc {
       background-color: #DBFBCC;
-      justify-content:right;
-  }
-  
-  #apr div time:nth-child(1) {
-      font-size: 25px;
-  
-  }
-     /*------------------------MAY----------------------------*/
+      justify-content:center;
+ }
+
+  #marc div time:nth-child(1) {
+      font-size: 25px;  
+}
+   
+/*-------------------------APRIL----------------------------*/
+#apr div {
+    display: grid;
+    background-color: #16421C;
+    color: #DBFBCC;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 10%;
+    box-shadow: 20px 20px 50px grey;
+}
+
+#apr {
+    background-color: #DBFBCC;
+    justify-content:right;
+}
+
+#apr div time:nth-child(1) {
+    font-size: 25px;
+}
+
+/*------------------------MAY----------------------------*/
 
   #may div {
     display: grid;
@@ -154,21 +148,27 @@
     background-color: #DBFBCC;
     text-align: center;         
     border-radius: 10%;
-    padding-top: 20px;
+    padding-top: 15px;
   } 
 
   #may {
       background-color: #16421C;
       justify-content: space-between;
-      padding-top: 20px;
+      padding-top: 15px;
   }
 
   #may div time:nth-child(1) {
       font-size: 25px;
-
   }
 
  /*------------------------JUNE----------------------------*/
+ 
+ #june {
+     background-color: #00A7AE;
+     align-items: center;
+     gap: 15px;  
+     padding-top: 5px;
+ }
 
 #june div {
   display: grid;
@@ -177,23 +177,204 @@
   text-align: center;
   border-radius: 10%;
   box-shadow: 20px 20px 50px grey;
-  gap: 40px 0;
+  gap: 30px 0;
 }
 
-#june {
-    background-color: #DBFBCC;
-    gap: 20px;
-  
-}
 
 #june div time:nth-child(1) {
     font-size: 25px;
+    background-color: #16421C;
+    color: #DBFBCC;
+    border-radius: 15px 15px 0 0;
 
 }
     /*---------------------------------------------FLEX---------------------------------------------------*/
 
-
-
  #july, #aug, #sept, #oct, #nov {
      display: flex;
+     flex-wrap: wrap;
  }
+
+
+ /*------------------------JULY----------------------------*/
+
+ #july {
+   gap: 10px;
+   justify-content: left;
+   text-align: center;
+   flex-wrap: wrap;
+   margin-top: 20px;
+ }
+
+ #july div {
+/*   width: calc(100% / 7);  */
+   width: 250px;
+   height: 180px;
+   background-color: #00A7AE;  
+   color: #DBFBCC; 
+   border-radius: 15px;
+  }
+
+  #july .card time {
+    display: block;
+    padding: 15px 0;
+  }
+  
+  #july .card time:nth-child(1) {
+    background-color: #A1E0BC;
+    color: #00A7AE;
+    font-size: 25px;
+    border-radius: 15px 15px 0 0;
+   }
+
+ /*------------------------AUGUSTUS---------------------------*/
+ 
+ #aug {
+   gap: 10px;
+   text-align: center;
+   justify-content: right;
+   flex-wrap: wrap;
+   margin-top: 20px;
+  }
+
+ #aug div {
+/*   width: calc(100% / 7);  */
+   width: 250px;
+   height: 180px;
+   background-color: #16421C;
+   color: #DBFBCC; 
+   box-shadow: 20px 20px 50px grey;
+   border-radius: 15px;
+  }
+
+  #aug .card time {
+    display: block;
+    padding: 15px 0;
+  }
+  
+  /*------------------------SEPTEMBER---------------------------*/
+  #sept {
+    gap: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+   }
+ 
+  #sept div {
+ /*   width: calc(100% / 7);  */
+    width: 250px;
+    height: 180px;
+    background-color: #A1E0BC;
+    box-shadow: 20px 20px 50px grey;
+    border-radius: 15px;
+    color: #16421C;
+   }
+
+   #sept .card time {
+    display: block;
+    padding: 15px 0;
+  }
+
+  #sept .card time:nth-child(1) {
+    background-color: #00A7AE;
+    font-size: 25px;
+    border-radius: 15px 15px 0 0;
+   }
+  
+   
+   /*------------------------OCTOBER---------------------------*/
+   
+   #oct {
+     text-align: center;
+     justify-content: space-around;
+     align-content: center;
+     flex-wrap: wrap;
+     background-color: #00A7AE;
+     gap: 0 10px;
+     
+    }
+    
+    #oct div {
+      /*   width: calc(100% / 7);  */
+      width: 250px;
+      height: 180px;
+      background-color: #A1E0BC;
+      box-shadow: 20px 20px 50px grey;
+      border-radius: 15px;
+      color: #16421C;
+      margin: 8px 0;
+    }
+
+    #oct .card time {
+      display: block;
+      padding: 15px 0;
+    }
+
+    #oct .card time:nth-child(1) {
+      font-size: 25px;
+      border-radius: 15px 15px 0 0;
+     }
+    
+  
+   /*------------------------NOVEMBER---------------------------*/
+  #nov {
+    text-align: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #A1E0BC;
+    gap: 0 10px;
+    
+  }
+  
+  #nov div {
+    /*   width: calc(100% / 7);  */
+    width: 250px;
+    height: 180px;
+    background-color: #A1E0BC;
+    box-shadow: 20px 20px 50px grey;
+    border-radius: 15px;
+    color: #16421C;
+    margin: 8px 0;
+  }
+
+  #nov .card time {
+    display: block;
+    padding: 15px 0;
+  }
+
+  #nov .card time:nth-child(1) {
+      font-size: 25px;
+      background-color: #16421C;
+      color: #DBFBCC;
+      border-radius: 15px 15px 0 0;
+     }
+
+
+   /*------------------------DECEMBER---------------------------*/
+
+   #dec .card {
+     display: inline-block;
+    /*   width: calc(100% / 7);  */
+    padding: 10px 70px;
+    text-align: center;
+    background-color: #A1E0BC;
+    box-shadow: 20px 20px 50px grey;
+    border-radius: 15px;
+    color: #16421C;
+    margin: 10px;
+  }
+
+  #dec .card time {
+    display: block;
+    padding: 15px 0;
+  }
+
+  #dec .card time:nth-child(1) {
+    font-size: 25px;
+    color: #16421C
+   }
+
+    
+  
